@@ -1,111 +1,459 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-<meta charset="UTF-8">
-<title>Catálogo de Productos</title>
-
-<style>
-
-body{
-    font-family:Arial,sans-serif;
-    background:#f5f5f5;
-    margin:0;
-}
-
-header{
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-.contenedor{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-    justify-content:center;
-}
-
-.tarjeta{
-    width:350px;
-}
-
-.tarjeta img{
-    width:100%;
-}
-
-.info{
-    padding:15px;
-}
-
-.precio{
-    color:green;
-    font-size:24px;
-    font-weight:bold;
-}
-
-.boton{
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    display:block;
-    text-align:center;
-    padding:10px;
-    border-radius:5px;
-}
-
-</style>
+<html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de muebles en venta">
+  <title>Muebles en venta</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
+  <header class="encabezado">
+    <div class="encabezado__contenido">
+      <p class="encabezado__etiqueta">CATÁLOGO PARTICULAR</p>
+      <h1>Muebles en venta</h1>
+      <p>Muebles y objetos seleccionados. Consultas y coordinación por WhatsApp.</p>
+    </div>
+  </header>
 
-<header>
-<h1>Catálogo de Productos</h1>
-</header>
-<div class="contenedor">
-<div class="tarjeta">
+  <main class="contenedor">
+    <section class="productos" aria-label="Muebles disponibles">
 
-<img src="Artefacto 1.jpg" alt="Artefacto de
+      <!-- PRODUCTO 1: MESA LIVING-->
+      <article class="producto" data-producto="Mesa living">
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Artefacto de Luz">
+            <img src="https://ngtournier-crypto.github.io/Catalogo-productos-varios-/Artefacto 1.jpg" alt="Artefacto de Luz, vista principal">
+          </button>
 
-<div class="info">
+          <!-- <div class="miniaturas" aria-label="Fotos de Mesa living">
+            <button class="miniatura activa" type="button" data-src="imagenes/mesa_living/Mesa_arriba.jpg" data-alt="Mesa living, vista principal">
+              <img src="https://ngtournier-crypto.github.io/Catalogo-productos-varios-/Artefacto 1.jpg" alt="Miniatura 1 de Mesa living">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/mesa_living/Mesa_lateral.jpg" data-alt="Mesa living, vista lateral">
+              <img src="imagenes/mesa_living/Mesa_lateral.jpg" alt="Miniatura 2 de Mesa living">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/mesa_living/Mesa_sillas.jpg" data-alt="Mesa living, detalle de la madera">
+              <img src="imagenes/mesa_living/Mesa_sillas.jpg" alt="Miniatura 3 de Mesa living">
+            </button>
+          </div> -->
+        </div>
 
-<h2>Artefacto de luz</h2>
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Algarrobo con 3 artefactos de luz</h2>
+            <p class="precio">$50.000</p>
+          </div>
+          <p class="descripcion">Juego de comedor compuesto por una amplia mesa rectangular y ocho sillas de madera con asiento tapizado. 
+             De diseño clásico y estructura sólida, ofrece capacidad para ocho personas</p>
+          <dl class="detalles">
+            <div><dt>Medidas</dt><dd>2,00 × 1,00 m</dd></div>
+            <div><dt>Material</dt><dd>Madera</dd></div>
+            <div><dt>Estado</dt><dd>Excelente</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/5493412023327?text=Hola,%20consulto%20por%20Artefacto%20de%20Luz" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+      </div>
+      </article>
 
-<p>Algarrobo con 3 artefactos de luz</p>
+      <!-- PRODUCTO 2: SILLÓN -->
+      <article class="producto" data-producto="Sillón de dos cuerpos">
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Aplique pared">
+            <img src="https://ngtournier-crypto.github.io/Catalogo-productos-varios-/Aplique pared.jpg" alt="Aplique pared, vista principal">
+          </button>
 
-<p class="precio">$50.000</p>
+          <!-- <div class="miniaturas" aria-label="Fotos de Sillón de dos cuerpos">
+            <button class="miniatura activa" type="button" data-src="imagenes/sillon/sillon_lateral.jpg" data-alt="Sillón de dos cuerpos, vista principal">
+              <img src="imagenes/sillon/sillon_lateral.jpg" alt="Miniatura 1 del sillón">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/sillon/sillon_frente.jpg" data-alt="Sillón de dos cuerpos, vista lateral">
+              <img src="imagenes/sillon/sillon_frente.jpg" alt="Miniatura 2 del sillón">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/sillon/sillon_respaldo.jpg" data-alt="Sillón de dos cuerpos, detalle del tapizado">
+              <img src="imagenes/sillon/sillon_respaldo.jpg" alt="Miniatura 3 del sillón">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/sillon/sillon_pufs.jpg" data-alt="Sillón de dos cuerpos, detalle del tapizado">
+              <img src="imagenes/sillon/sillon_pufs.jpg" alt="Miniatura 3 del sillón">
+            </button>
+          </div> -->
+        </div>
 
-<a class="boton"
-href="https://wa.me/5493412023327?text=Hola,%20consulto%20por%20Artefacto%20de%20Luz"
-target="_blank">
-Consultar por WhatsApp
-</a>
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Aplique pared</h2>
+            <p class="precio">$ 25.000</p>
+          </div>
+          <p class="descripcion">Sofá Valenziana de dos amplias plazas, tapizado en tela gris, 
+             Con apoya cabezas reclinable y asiento extensible. Cuatro taburetes extraíbles. Respaldos, 
+             cabeceros y apoyabrazos lavables</p>
+          <dl class="detalles">
+            <div><dt>Medidas</dt><dd>2,15 × 1,10 m</dd></div>
+            <div><dt>Material</dt><dd>Tela</dd></div>
+            <div><dt>Estado</dt><dd>Excelente</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/5493412023327?text=Hola,%20consulto%20por%Aplique%20de%20pared" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+      </article>
 
-</div>
-    <div class="tarjeta">
+            <!-- PRODUCTO 3: Mesa Comedor  -->
+      <article class="producto producto--vendido" data-producto="Mesa y sillas Comedor">
+         <span class="cinta-vendido">VENDIDO</span>
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Artefacto rueda">
+            <img src="https://ngtournier-crypto.github.io/Catalogo-productos-varios-/Artefacto rueda.jpg" alt="Artefacto rueda, vista principal">
+          </button>
+        <!-- <div class="miniaturas" aria-label="Fotos de Mesa y sillas Comedor">
+            <button class="miniatura activa" type="button" data-src="imagenes/mesa_comedor/Mesa_comedor.jpg" data-alt="Mesa comedor, vista principal">
+              <img src="imagenes/mesa_comedor/Mesa_comedor.jpg" alt="Miniatura 1 de la mesa comedor">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/mesa_comedor/Mesa_comedor2.jpg" data-alt="Mesa comedor, vista lateral">
+              <img src="imagenes/mesa_comedor/Mesa_comedor2.jpg" alt="Miniatura 2 de la mesa comedor">
+            </button>
+          </div>
+        </div> -->
 
-<img src="Artefacto 1.jpg" alt="Artefacto de
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Artefacto rueda</h2>
+            <p class="precio">$ 115.000</p>
+          </div>
+          <p class="descripcion">Juego de comedor compuesto por una amplia mesa rectangular de madera y seis sillas con asientos tapizados. 
+            De estructura sólida, robusta y pesada. Ideal para uso diario y reuniones familiares</p>
+          <dl class="detalles">
+            <div><dt>Medidas</dt><dd>1,60 × 1,00 m</dd></div>
+            <div><dt>Material</dt><dd>Madera</dd></div>
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+         <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+        </article>
 
-<div class="info">
+      <!-- PRODUCTO 4: Mueble organizador de madera -->
+      <article class="producto producto--vendido" data-producto="Mueble organizador de madera">
+         <span class="cinta-vendido">VENDIDO</span>
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Mueble organizador de madera">
+            <img src="imagenes/aparador/Mueble_cajonera.jpg" alt="Mueble organizador de madera, vista principal">
+          </button>
 
-<h2>Artefacto de luz</h2>
+          <div class="miniaturas" aria-label="Fotos de Mueble organizador de madera">
+            <button class="miniatura activa" type="button" data-src="imagenes/aparador/Mueble_cajonera.jpg" data-alt="Cajonera de madera, vista principal">
+              <img src="imagenes/aparador/Mueble_cajonera.jpg" alt="Miniatura 1 de la cajonera">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/aparador/Mueble_cajonera2.jpg" data-alt="Cajonera de madera, interior">
+              <img src="imagenes/aparador/Mueble_cajonera2.jpg" alt="Miniatura 2 de la cajonera">
+            </button>
+          
+          </div>
+        </div>
 
-<p>Algarrobo con 3 artefactos de luz</p>
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Mueble organizador</h2>
+            <p class="precio">$ 250.000</p>
+          </div>
+          <p class="descripcion">Mueble organizador de madera, amplio y funcional, con dos cajones de gran capacidad y
+            dos espacios abiertos. Puede utilizarse como rack para TV, cómoda o mueble auxiliar para living, 
+            comedor o dormitorio.</p>
+          <dl class="detalles">
+            <div><dt>Medidas</dt><dd>1,50 × 0,40 m</dd></div>
+            <div><dt>Material</dt><dd>Madera</dd></div>
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+         <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+        </article>
 
-<p class="precio">$50.000</p>
+<!-- PRODUCTO 5: Cama marinera  -->
+      <article class="producto producto--vendido" data-producto="Cama marinera">
+          <span class="cinta-vendido">VENDIDO</span>
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Cama marinera">
+            <img src="imagenes/Cama_marinera/cama_marinera.jpg" alt="Cama marinera, vista principal">
+          </button>
+           <div class="miniaturas" aria-label="Fotos de cama marinera">
+            <button class="miniatura activa" type="button" data-src="imagenes/Cama_marinera/cama_marinera.jpg" data-alt="Cama marinera, vista principal">
+              <img src="imagenes/Cama_marinera/cama_marinera.jpg" alt="Miniatura 1 de la cama marinera">
+            </button>
+           <button class="miniatura" type="button" data-src="imagenes/Cama_marinera/cama_marinera2.jpg" data-alt="Cama marinera, vista lateral">
+              <img src="imagenes/Cama_marinera/cama_marinera2.jpg" alt="Miniatura 2 de la cama marinera">
+            </button>
+          </div>
+        </div>
 
-<a class="boton"
-href="https://wa.me/5493412023327?text=Hola,%20consulto%20por%20Artefacto%20de%20Luz"
-target="_blank">
-Consultar por WhatsApp
-</a>
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Cama marinera</h2>
+            <p class="precio">$ 450.000</p>
+          </div>
+          <p class="descripcion">Cama individual tapizada en tela gris, con colchón nuevo de espuma y amplio cajón baulero 
+            inferior extraíble con ruedas. Incluye respaldo envolvente con diseño de canaletas tapizadas, ideal para utilizar 
+            también como diván.</p>
+          <dl class="detalles">
+            <div><dt>Medidas</dt><dd>1,90 × 0,80 m</dd></div>
+            <div><dt>Material</dt><dd>Estructura tapizada</dd></div>
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+           <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+        </article>
 
-</div>
-</div>
-</body>
-</html>
+      <!-- PRODUCTO 6: CAMA NIDO -->
+      <article class="producto producto--vendido" data-producto="Cama Nido">
+        <span class="cinta-vendido">VENDIDO</span>
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Cama nido">
+            <img src="imagenes/Cama_nido/camanido.jpg" alt="Cama nido, vista principal">
+          </button>
+
+          <div class="miniaturas" aria-label="Fotos de Cama nido">
+            <button class="miniatura activa" type="button" data-src="imagenes/Cama_nido/camanido.jpg" data-alt="Cama nido, vista principal">
+              <img src="imagenes/Cama_nido/camanido.jpg" alt="Miniatura 1 de cama nido">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/Cama_nido/camanido2.jpg" data-alt="Cama nido, vista lateral">
+              <img src="imagenes/Cama_nido/camanido2.jpg" alt="Miniatura 2 de cama nido">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/Cama_nido/camanido3.jpg" data-alt="Cama nido, vista frente">
+              <img src="imagenes/Cama_nido/camanido3.jpg" alt="Miniatura 3 de cama nido">
+            </button>
+          </div>
+        </div>
+
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Cama nido</h2>
+            <p class="precio">$ 400.000</p>
+          </div>
+          <p class="descripcion">Cama nido doble 1 plaza en tono madera clara, con una segunda cama extraíble en la parte inferior. 
+              Ideal para dormitorio juvenil, habitación de huéspedes o espacios reducidos.
+               Incluye los dos colchones.</p>
+          <dl class="detalles">
+            <div><dt>Medidas</dt><dd>1,90 × 0,80 m</dd></div>
+            <div><dt>Material</dt><dd>Madera</dd></div>
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+      </article>
+
+      <!-- PRODUCTO 7: VENTILADOR DE TECHO-->
+      <article class="producto producto--vendido" data-producto="Ventilador de techo">
+        <span class="cinta-vendido">VENDIDO</span>
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de ventilador de techo">
+            <img src="imagenes/ventiladordetecho.jpg" alt="ventilador de techo, vista principal">
+          </button>
+                <div class="miniaturas" aria-label="Fotos de ventilador de techo">
+            <button class="miniatura activa" type="button" data-src="imagenes/ventiladordetecho.jpg" data-alt="ventilador de techo, vista principal">
+              <img src="imagenes/ventiladordetecho.jpg" alt="Miniatura 1 de ventilador de techo">
+            </button>
+          </div>
+        </div>
+
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Ventilador de techo</h2>
+            <p class="precio">$ 85.000</p>
+          </div>
+          <p class="descripcion">Ventilador de techo de cuatro paletas símil madera, con estructura metálica y
+            luminaria central.</p>
+          <dl class="detalles">
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+      </article>
+
+ <!-- PRODUCTO 8: Plafón cromado de 3 luces-->
+      <article class="producto producto--vendido" data-producto="Plafón cromado de 3 luces">
+        <span class="cinta-vendido">VENDIDO</span>
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Plafón cromado de 3 luces">
+            <img src="imagenes/lampara_living2.jpg" alt="Plafón cromado de 3 luces, vista principal">
+          </button>
+       <div class="miniaturas" aria-label="Fotos de Plafón cromado de 3 luces">
+            <button class="miniatura activa" type="button" data-src="imagenes/lampara_living2.jpg" data-alt="Plafón cromado de 3 luces, vista principal">
+              <img src="imagenes/lampara_living2.jpg" alt="Miniatura 1 de Plafón cromado de 3 luces">
+            </button>
+          </div>
+        </div>
+
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Plafón cromado de 3 luces</h2>
+            <p class="precio">$ 85.000</p>
+          </div>
+          <p class="descripcion">Plafón de techo de diseño moderno, con estructura curva cromada y tres tulipas 
+            esféricas de vidrio texturado.</p>
+          <dl class="detalles">
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+      </article>
+
+ <!-- PRODUCTO 9: Plafón cromado de 9 luces-->
+      <article class="producto producto--vendido" data-producto="Plafón cromado de 9 luces">
+        <span class="cinta-vendido">VENDIDO</span>
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Plafón cromado de 9 luces">
+            <img src="imagenes/lampara_living.jpg" alt="Plafón cromado de 9 luces, vista principal">
+          </button>
+          <div class="miniaturas" aria-label="Fotos de Plafón cromado de 9 luces">
+            <button class="miniatura activa" type="button" data-src="imagenes/lampara_living.jpg" data-alt="Plafón cromado de 9 luces, vista principal">
+              <img src="imagenes/lampara_living.jpg" alt="Miniatura 1 de Plafón cromado de 9 luces">
+            </button>
+          </div>
+        </div>
+
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Plafón cromado de 9 luces</h2>
+            <p class="precio">$ 200.000</p>
+          </div>
+          <p class="descripcion">Plafón de techo amplio y decorativo, con estructura curva cromada y nueve tulipas
+             esféricas de vidrio texturado.</p>
+          <dl class="detalles">
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+      </article>
+
+ <!-- PRODUCTO 10: Plafón negro doble orientable-->
+      <article class="producto producto--vendido" data-producto="Plafón negro doble orientable">
+        <span class="cinta-vendido">VENDIDO</span>
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Plafón negro doble orientable">
+            <img src="imagenes/spot_estudio.jpg" alt="Plafón negro doble orientable, vista principal">
+          </button>
+                 <div class="miniaturas" aria-label="Fotos de Plafón negro doble orientable">
+            <button class="miniatura activa" type="button" data-src="imagenes/spot_estudio.jpg" data-alt="Plafón negro doble orientable, vista principal">
+              <img src="imagenes/spot_estudio.jpg" alt="Miniatura 1 de Plafón negro doble orientable">
+            </button>
+          </div>
+        </div>
+
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Plafón negro doble orientable</h2>
+            <p class="precio">$ 16.000</p>
+          </div>
+          <p class="descripcion">Plafón rectangular negro con dos spots orientables. De diseño moderno y minimalista, 
+            permite dirigir la iluminación hacia distintos sectores.</p>
+          <dl class="detalles">
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+      </article>
+
+ <!-- PRODUCTO 11: Plafón negro de 4 luces orientables-->
+      <article class="producto producto--vendido" data-producto="Plafón negro de 4 luces orientables">
+        <span class="cinta-vendido">VENDIDO</span>
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Plafón negro de 4 luces orientable">
+            <img src="imagenes/spotliving.jpg" alt="Plafón negro de cuatro luces orientable, vista principal">
+          </button>
+          <div class="miniaturas" aria-label="Fotos de Plafón negro de cuatro luces orientables">
+            <button class="miniatura activa" type="button" data-src="imagenes/spotliving.jpg" data-alt="Plafón negro de cuatro luces orientables, vista principal">
+              <img src="imagenes/spotliving.jpg" alt="Miniatura 1 de Plafón negro de cuatro luces orientables">
+            </button>
+          </div>
+        </div>
+
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Plafón negro de cuatro luces orientable</h2>
+            <p class="precio">$ 35.000</p>
+          </div>
+          <p class="descripcion">Plafón cuadrado negro con cuatro spots orientables. Diseño moderno y funcional,
+             ideal para iluminar ambientes amplios.</p>
+          <dl class="detalles">
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+      </article>
+
+       <!-- PRODUCTO 12: Aplique de pared con cuatro spots-->
+      <article class="producto producto--vendido" data-producto="Aplique de pared con cuatro spots">
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar imagen de Aplique de pared con cuatro spots">
+            <img src="imagenes/Lampara_pasillo.jpg" alt="Aplique de pared con cuatro spots, vista principal">
+          </button>
+          <div class="miniaturas" aria-label="Fotos de Aplique de pared con cuatro spots">
+            <button class="miniatura activa" type="button" data-src="imagenes/Lampara_pasillo.jpg" data-alt="Aplique de pared con cuatro spots, vista principal">
+              <img src="imagenes/Lampara_pasillo.jpg" alt="Miniatura 1 de Aplique de pared con cuatro spots">
+            </button>
+      
+          </div>
+        </div>
+
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Aplique de pared con cuatro spots</h2>
+            <p class="precio">$ 35.000</p>
+          </div>
+          <p class="descripcion">Aplique de pared metálico con cuatro spots orientables. Permite dirigir cada luz de manera
+             independiente y distribuir la iluminación.</p>
+          <dl class="detalles">
+            <div><dt>Estado</dt><dd>Muy bueno</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+      </article>
 
 
+            <!-- PRODUCTO 13: CAVA -->
+      <article class="producto" data-producto="Cava">
+        <div class="galeria">
+          <button class="foto-principal" type="button" aria-label="Ampliar cava para vinos">
+            <img src="imagenes/Cava/cava2.jpg" alt="Cava, vista principal">
+          </button>
 
-</div>
+          <div class="miniaturas" aria-label="Fotos de Cava para vinos">
+            <button class="miniatura activa" type="button" data-src="imagenes/Cava/cava2.jpg" data-alt="Cava, vista principal">
+              <img src="imagenes/Cava/cava2.jpg" alt="Miniatura 1 de cava">
+            </button>
+            <button class="miniatura" type="button" data-src="imagenes/Cava/cava.jpg" data-alt="Cava, vista lateral">
+              <img src="imagenes/Cava/cava.jpg" alt="Miniatura 2 de Cava">
+            </button>
+      
+          </div>
+        </div>
+
+        <div class="informacion">
+          <div class="titulo-precio">
+            <h2>Cava para vinos</h2>
+            <p class="precio">$ 500.000</p>
+          </div>
+          <p class="descripcion"> Cava para vinos Electrolux con doble compartimento, puertas de vidrio 
+            y control digital de temperatura.</p>
+          <dl class="detalles">
+            <div><dt>Medidas</dt><dd>0,87 × 0,50 m</dd></div>
+            <div><dt>Estado</dt><dd>Muy buena</dd></div>
+          </dl>
+          <a class="boton-whatsapp" href="https://wa.me/59895013017?text=Hola,%20quiero%20consultar%20por%20el%20sillon%20de%20dos%20cuerpos" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Consultas y coordinación de entrega por WhatsApp.</p>
+  </footer>
+
+  <div class="modal" id="modalGaleria" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Galería ampliada">
+    <button class="modal__cerrar" type="button" aria-label="Cerrar galería">×</button>
+    <button class="modal__anterior" type="button" aria-label="Imagen anterior">‹</button>
+    <figure class="modal__contenido">
+      <img id="modalImagen" src="" alt="">
+      <figcaption id="modalTexto"></figcaption>
+    </figure>
+    <button class="modal__siguiente" type="button" aria-label="Imagen siguiente">›</button>
+  </div>
+
+  <script src="js/galeria.js"></script>
+
+
+</body></html>
